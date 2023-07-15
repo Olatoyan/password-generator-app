@@ -143,5 +143,5 @@ copy.addEventListener("click", function (e) {
       copiedText.style.visibility = "hidden";
       copiedText.style.transform = "translateY(-100%)";
     }, 2000);
-  }, 500);
+  }, 200);
 });

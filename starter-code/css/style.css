@@ -33,6 +33,7 @@ body {
 .password__output__box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #24232c;
   padding: 1.9rem 3.2rem;
@@ -60,6 +61,7 @@ body {
   width: 2.1rem;
   cursor: pointer;
   fill: #a4ffaf;
+  transition: all 0.3s;
 }
 .copy:hover {
   fill: #fff;
@@ -102,11 +104,13 @@ body {
   background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid #fff;
 }
 
 .password__range::-webkit-slider-thumb:hover {
   background-color: #18171f;
-  border: 2px solid #a4ffaf;
+  border-color: #a4ffaf;
 }
 
 .password__requirement__box {
@@ -121,6 +125,7 @@ body {
   gap: 2.4rem;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .password__requirements:hover .checkbox__icon {
   border-color: #a4ffaf;
@@ -218,6 +223,7 @@ body {
   padding: 2.1rem;
   cursor: pointer;
   border: 2px solid #a4ffaf;
+  transition: all 0.3s;
 }
 
 .generate:hover {
@@ -263,6 +269,9 @@ body {
   .password__output,
   .password__length {
     font-size: 2.4rem;
+  }
+  .password__output__box {
+    padding: 1.4rem;
   }
   .password__box {
     padding: 1.6rem 2rem;
