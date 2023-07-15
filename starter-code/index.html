@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Password generator app</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="primary__heading">Password Generator</h1>
+      <div class="password__output__box">
+        <p class="password__output">P4$5W0rD!</p>
+        <div class="copy__box">
+          <p class="copied">copied</p>
+          <svg class="copy">
+            <use xlink:href="assets/images/icon-copy.svg#copy"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="password__box">
+        <div class="character__length__box">
+          <h2 class="secondary__heading">Character Length</h2>
+          <p class="password__length">10</p>
+        </div>
+        <input type="range" class="password__range" min="0" max="20" />
+        <div class="password__requirement__box">
+          <label for="uppercase" class="password__requirements">
+            <input type="checkbox" id="uppercase" class="checkbox" />
+            <div class="checkbox__icon"></div>
+            <p class="password__requirement uppercase">
+              Include Uppercase Letters
+            </p>
+          </label>
+          <label for="lowercase" class="password__requirements">
+            <input type="checkbox" id="lowercase" class="checkbox" checked />
+            <div class="checkbox__icon"></div>
+
+            <p class="password__requirement lowercase">
+              Include Lowercase Letters
+            </p>
+          </label>
+          <label for="numbers" class="password__requirements">
+            <input type="checkbox" id="numbers" class="checkbox" checked />
+            <div class="checkbox__icon"></div>
+
+            <p class="password__requirement number">Include Numbers</p>
+          </label>
+
+          <label for="symbols" class="password__requirements">
+            <input type="checkbox" id="symbols" class="checkbox" />
+            <div class="checkbox__icon"></div>
+
+            <p class="password__requirement symbols">Include Symbols</p>
+          </label>
+        </div>
+        <div class="strength__container">
+          <p class="strength">strength</p>
+          <div class="strength__box">
+            <p class="strength__type">medium</p>
+            <div class="strength__bar__box">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <button class="generate">
+          <p class="generate__text">generate</p>
+          <svg class="generate__icon">
+            <use
+              xlink:href="assets/images/icon-arrow-right.svg#arrow-right"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
